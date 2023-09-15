@@ -39,13 +39,17 @@
 							<!-- Heading -->
 							<div class="onovo-heading gap-bottom-60">
 								<div class="onovo-subtitle-1">
-									<span> Welcome to Onovo </span>
+									<span> Welcome to Magic Graphics Design </span>
 								</div>
 								<h2 class="onovo-title-2">
-									<span> We are a digital agency, <br>passionate about building <br>and designing brands </span>
+									We're more than just a design studio – we're your creative partner on the journey to visual excellence.
+
+									{{-- <span> We are a digital agency, <br>passionate about building <br>and designing brands </span> --}}
 								</h2>
 								<div class="onovo-text">
-									<p>From the moment our company was founded, we have helped our clients find <strong>exceptional solutions for their businesses</strong>, creating memorable brands and digital products. Our expertise grows with each year, and our accumulated experience. </p>
+									<p>
+										Since the inception of our agency, we've been dedicated to assisting our clients in discovering <strong>outstanding solutions for their graphic needs</strong>, crafting distinctive brands, and producing remarkable digital products. Our proficiency continues to expand year by year, driven by our ever-growing wealth of experience.
+									</p>
 								</div>
 							</div>
 

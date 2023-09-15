@@ -54,7 +54,7 @@
 							<div class="onovo-logo-image" style="max-width: 70px">
 								<a href="{{ route('home') }}">
 									<img src="assets/images/logo-black.png" alt="Onovo" />
-									<img class="logo--white" src="assets/images/logo-main.png" alt="Onovo" />
+									<img class="logo--white" src="assets/images/logo-main2.png" alt="Onovo" />
 								</a>
 							</div>
 
@@ -70,10 +70,10 @@
 									<div class="container">
 										<div class="onovo-menu">
 											<ul class="onovo-menu-nav">
-												<li class="dropdown-link current-menu-item menu-item-has-children">
-													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="index.html">Home</a>
-													<i class="icon fas fa-chevron-down"></i>
-													<ul class="sub-menu">
+												<li class="dropdown-link current-menu-item ">
+													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="{{ route('home') }}">Home</a>
+													{{-- <i class="icon fas fa-chevron-down"></i> --}}
+													{{-- <ul class="sub-menu">
 														<li class="current-menu-item">
 															<a class="onovo-lnk lnk--active" href="index.html">Creative Agency</a>
 														</li>
@@ -86,7 +86,7 @@
 														<li>
 															<a class="onovo-lnk lnk--active" href="home-parallax.html">Fullscreen Parallax</a>
 														</li>
-													</ul>
+													</ul> --}}
 												</li>
 												<li class="dropdown-link menu-item-has-children">
 													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="about-us.html">About</a>
@@ -95,30 +95,29 @@
 														<li>
 															<a class="onovo-lnk lnk--active" href="about-us.html">About Us</a>
 														</li>
-														<li>
+														{{-- <li>
 															<a class="onovo-lnk lnk--active" href="team.html">Team</a>
-														</li>
-														<li>
+														</li> --}}
+														{{-- <li>
 															<a class="onovo-lnk lnk--active" href="team-detail.html">Team Detail</a>
-														</li>
+														</li> --}}
 														<li>
 															<a class="onovo-lnk lnk--active" href="services.html">Services</a>
 														</li>
 														<li>
-															<a class="onovo-lnk lnk--active" href="service-detail.html">Service Detail</a>
-														</li>
-														<li>
 															<a class="onovo-lnk lnk--active" href="pricing-plans.html">Pricing Plans</a>
 														</li>
-														<li>
+														{{-- <li>
 															<a class="onovo-lnk lnk--active" href="faq.html">FAQ</a>
-														</li>
+														</li> --}}
 													</ul>
 												</li>
-												<li class="dropdown-link menu-item-has-children">
+												<li class="dropdown-link 
+												{{-- menu-item-has-children --}}
+												">
 													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="projects.html">Projects</a>
-													<i class="icon fas fa-chevron-down"></i>
-													<ul class="sub-menu">
+													{{-- <i class="icon fas fa-chevron-down"></i> --}}
+													{{-- <ul class="sub-menu">
 														<li>
 															<a class="onovo-lnk lnk--active" href="projects.html">Projects Grid</a>
 														</li>
@@ -140,25 +139,10 @@
 														<li>
 															<a class="onovo-lnk lnk--active" href="project-detail.html">Project Detail</a>
 														</li>
-													</ul>
-												</li>
-												<li class="dropdown-link menu-item-has-children">
-													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="blog.html">Blog</a>
-													<i class="icon fas fa-chevron-down"></i>
-													<ul class="sub-menu">
-														<li>
-															<a class="onovo-lnk lnk--active" href="blog.html">Blog Grid</a>
-														</li>
-														<li>
-															<a class="onovo-lnk lnk--active" href="blog-list.html">Blog List</a>
-														</li>
-														<li>
-															<a class="onovo-lnk lnk--active" href="blog-detail.html">Blog Detail</a>
-														</li>
-													</ul>
+													</ul> --}}
 												</li>
 												<li>
-													<a class="onovo-lnk lnk--active" href="contact-us.html">Contact Us</a>
+													<a class="onovo-lnk lnk--active" href="{{ route('contact') }}">Contact Us</a>
 												</li>
 											</ul>
 										</div>
@@ -286,7 +270,7 @@
 
 							<!-- Copyright -->
 							<div class="copyright onovo-text-white">
-								© 2023 ONOVO by <a href="https://bslthemes.com" target="blank" class="onovo-lnk lnk--white">bslthemes Team</a>. All rights reserved.
+								© 2023 All rights reserved by Magic Graphics Design 
 							</div>
 
 						</div>

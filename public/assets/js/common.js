@@ -1,10 +1,3 @@
-/**
-*	Onovo - Creative Portfolio Agency HTML Template
-*	Version: 1.0
-*	Author: bslthemes
-*	Author URL: http://themeforest.net/user/bslthemes
-*	Copyright © Onovo by bslthemes. All Rights Reserved.
-**/
 
 ( function( $ ) {
 	'use strict';
