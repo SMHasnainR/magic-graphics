@@ -19,5 +19,6 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/packages', [HomeController::class, 'packages'])->name('packages');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
