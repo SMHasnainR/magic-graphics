@@ -7,17 +7,58 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     
-    const PACKAGE = [
-        'ZERO' => [
-            'price' => 200
+    const PACKAGES = [
+        'ZERO PACKAGE' => [
+            'price' => 100,
+            'features' => [
+                'limited to 30 creatives per month',
+                '1 brand',
+            ]
         ],
-        'One' => [
-            'price' => 200
+        'One PACKAGE' => [
+            'price' => 200,
+            'features' => [
+                'limited to 30 creatives per month',
+                '1 dedicated graphic designer',
+                '10 brand',
+            ]
         ],
         'Silver Package' => [
-            'price' => 200
+            'price' => 300,
+            'features' => [
+                'limited to 30 creatives per month',
+                '1 dedicated graphic designer',
+                '20 revisions',
+                '1 brand',
+            ],
         ],
-        
+        'Gold Package' => [
+            'price' => 400,
+            'features' => [
+                'limited to 30 creatives per month',
+                '100 dedicated graphic designer',
+                '2 revisions',
+                '1 brand',
+            ],
+        ],
+        'Corporate Package' => [
+            'price' => 200,
+            'features' => [
+                'limited to 30 creatives per month',
+                '1 dedicated graphic designer',
+                '2 revisions',
+                '12 brand',
+            ],
+        ],
+        'Elite Package' => [
+            'price' => 200,
+            'features' => [
+                'limited to 30 creatives per month',
+                '1 dedicated graphic designer',
+                '2 revisions',
+                '1 brand',
+            ],
+        ],
     ];
 
     public function index(Request $request){
@@ -26,7 +67,9 @@ class HomeController extends Controller
 
     public function packages(Request $request){
         
-        return view('packages');
+        $packages = self::PACKAGES;
+        
+        return view('packages',compact('packages'));
     }
 
     public function contact(Request $request){

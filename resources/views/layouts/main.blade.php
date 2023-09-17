@@ -105,7 +105,7 @@
 															<a class="onovo-lnk lnk--active" href="services.html">Services</a>
 														</li>
 														<li>
-															<a class="onovo-lnk lnk--active" href="pricing-plans.html">Pricing Plans</a>
+															<a class="onovo-lnk lnk--active" href="{{ route('packages') }}">Pricing Plans</a>
 														</li>
 														{{-- <li>
 															<a class="onovo-lnk lnk--active" href="faq.html">FAQ</a>

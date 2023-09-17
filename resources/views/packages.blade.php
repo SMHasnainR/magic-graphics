@@ -37,147 +37,46 @@
 					<!-- Pricing items -->
 					<div class="row gap-row">
 
-						<!--pricing item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-							<div class="onovo-pricing">
-								<div class="onovo-pricing-item">
-									<div class="title">
-										<div class="name">
-											<span> Standard Package </span>
-										</div>
-										<div class="subname">
-											<span> 3 Months </span>
-										</div>
-										<div class="price">
-											<span> $60.10 </span>
-										</div>
-									</div>
-									<div class="desc">
-										<div class="pricing--overlay onovo-hover-3 onovo-hover-black"></div>
-										<div class="image onovo-text-white">
-											<i aria-hidden="true" class="fas fa-rocket"></i>
-										</div>
-										<div class="list">
-											<div>
-												<ul>
-													<li>
-														<i class="far fa-check-square"></i>Unlimited updates
-													</li>
-													<li>
-														<i class="far fa-check-square"></i>Custom permissions
-													</li>
-													<li style="text-decoration: line-through">
-														<i class="far fa-check-square"></i>Custom infrastructure
-													</li>
-													<li style="text-decoration: line-through">
-														<i class="far fa-check-square"></i>Custom design and features
-													</li>
-												</ul>
+						@foreach ($packages as $name => $package)
+							<!--pricing item-->
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+								<div class="onovo-pricing">
+									<div class="onovo-pricing-item">
+										<div class="title">
+											<div class="name">
+												<span> {{ $name }} </span>
+											</div>
+											{{-- <div class="subname">
+												<span> 3 Months </span>
+											</div> --}}
+											<div class="price">
+												<span> ${{ $package['price'] }} </span>
 											</div>
 										</div>
-										<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="contact-us.html">
-											<span> Purchase Now </span>
-										</a>
+										<div class="desc">
+											<div class="pricing--overlay onovo-hover-3 onovo-hover-black"></div>
+											<div class="image onovo-text-white">
+												<i aria-hidden="true" class="fas fa-rocket"></i>
+											</div>
+											<div class="list">
+												<div>
+													<ul>
+														@foreach ($package['features'] as $feature)
+															<li>
+																<i class="far fa-check-square"></i>{{ $feature }}
+															</li>
+														@endforeach
+													</ul>
+												</div>
+											</div>
+											<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="contact-us.html">
+												<span> Purchase Now </span>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-
-						<!--pricing item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-							<div class="onovo-pricing">
-								<div class="onovo-pricing-item active--default">
-									<div class="pricing--badge onovo-text-white">
-										<span> Recommended </span>
-									</div>
-									<div class="title">
-										<div class="name">
-											<span> Professional Package </span>
-										</div>
-										<div class="subname">
-											<span> 6 Months </span>
-										</div>
-										<div class="price">
-											<span> $120.10 </span>
-										</div>
-									</div>
-									<div class="desc">
-										<div class="pricing--overlay onovo-hover-3 onovo-hover-black"></div>
-										<div class="image onovo-text-white">
-											<i aria-hidden="true" class="fas fa-crown"></i>
-										</div>
-										<div class="list">
-											<div>
-												<ul>
-													<li>
-														<i class="far fa-check-square"></i>Unlimited updates
-													</li>
-													<li>
-														<i class="far fa-check-square"></i>Custom permissions
-													</li>
-													<li>
-														<i class="far fa-check-square"></i>Custom infrastructure
-													</li>
-													<li style="text-decoration: line-through">
-														<i class="far fa-check-square"></i>Custom design and features
-													</li>
-												</ul>
-											</div>
-										</div>
-										<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="contact-us.html">
-											<span> Purchase Now </span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!--pricing item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-							<div class="onovo-pricing">
-								<div class="onovo-pricing-item">
-									<div class="title">
-										<div class="name">
-											<span> Business Package </span>
-										</div>
-										<div class="subname">
-											<span> 01 Year </span>
-										</div>
-										<div class="price">
-											<span> $230.10 </span>
-										</div>
-									</div>
-									<div class="desc">
-										<div class="pricing--overlay onovo-hover-3 onovo-hover-black"></div>
-										<div class="image onovo-text-white">
-											<i aria-hidden="true" class="fas fa-city"></i>
-										</div>
-										<div class="list">
-											<div>
-												<ul>
-													<li>
-														<i class="far fa-check-square"></i>Unlimited updates
-													</li>
-													<li>
-														<i class="far fa-check-square"></i>Custom permissions
-													</li>
-													<li>
-														<i class="far fa-check-square"></i>Custom infrastructure
-													</li>
-													<li>
-														<i class="far fa-check-square"></i>Custom design and features
-													</li>
-												</ul>
-											</div>
-										</div>
-										<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="contact-us.html">
-											<span> Purchase Now </span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
+						@endforeach
 					</div>
 
 				</div>
