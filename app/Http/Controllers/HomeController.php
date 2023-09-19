@@ -72,11 +72,19 @@ class HomeController extends Controller
         return view('packages',compact('packages'));
     }
 
-    public function contact(Request $request){
+    public function services(){
+        return view('services');
+    }
+
+    public function contact(){
         return view('contact-us');
     }
 
     public function about(Request $request){
+        return view('about-us');
+    }
+
+    public function planRequest(Request $request){
         return view('about-us');
     }
 }

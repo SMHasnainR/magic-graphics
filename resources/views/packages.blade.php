@@ -111,7 +111,7 @@
 
 							<!-- Social -->
 							<div class="onovo-cta-social">
-								<div class="image" style="background-image: url(assets/images/cta-circle2.png);">
+								<div class="image" style="">
 									<div class="cta-img-circle img-circle--1"></div>
 									<div class="cta-img-circle img-circle--2"></div>
 									<div class="cta-img-circle img-circle--3"></div>

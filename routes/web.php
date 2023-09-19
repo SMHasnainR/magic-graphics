@@ -20,5 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/packages', [HomeController::class, 'packages'])->name('packages');
+Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
+
+Route::get('/plan-request', [HomeController::class, 'planRequest'])->name('plan-request');
