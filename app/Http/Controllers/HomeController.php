@@ -8,14 +8,16 @@ class HomeController extends Controller
 {
     
     const PACKAGES = [
-        'ZERO PACKAGE' => [
+        [
+            'name' => 'ZERO PACKAGE',
             'price' => 100,
             'features' => [
                 'limited to 30 creatives per month',
                 '1 brand',
             ]
         ],
-        'One PACKAGE' => [
+        [
+            'name' => 'One PACKAGE',
             'price' => 200,
             'features' => [
                 'limited to 30 creatives per month',
@@ -23,7 +25,8 @@ class HomeController extends Controller
                 '10 brand',
             ]
         ],
-        'Silver Package' => [
+        [
+            'name' => 'Silver Package',
             'price' => 300,
             'features' => [
                 'limited to 30 creatives per month',
@@ -32,7 +35,8 @@ class HomeController extends Controller
                 '1 brand',
             ],
         ],
-        'Gold Package' => [
+        [
+            'name' => 'Gold Package',
             'price' => 400,
             'features' => [
                 'limited to 30 creatives per month',
@@ -41,7 +45,8 @@ class HomeController extends Controller
                 '1 brand',
             ],
         ],
-        'Corporate Package' => [
+        [
+            'name' => 'Corporate Package',
             'price' => 200,
             'features' => [
                 'limited to 30 creatives per month',
@@ -50,7 +55,8 @@ class HomeController extends Controller
                 '12 brand',
             ],
         ],
-        'Elite Package' => [
+        [
+            'name' => 'Elite Package',
             'price' => 200,
             'features' => [
                 'limited to 30 creatives per month',
@@ -85,6 +91,11 @@ class HomeController extends Controller
     }
 
     public function planRequest(Request $request){
-        return view('about-us');
+        
+        $planRequestedId =  $request->plan;
+        $plans = self::PACKAGES;
+        $package = $plans[$planRequestedId];
+
+        return view('plan-request', compact('package'));
     }
 }

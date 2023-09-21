@@ -130,6 +130,10 @@ a:hover {
   color: var(--primary-color);
 }
 
+.text-secondary{
+  color: var(--secondary-color) !important;
+}
+
 a img {
   border: none;
 }

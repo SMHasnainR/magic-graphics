@@ -37,14 +37,14 @@
 					<!-- Pricing items -->
 					<div class="row gap-row">
 
-						@foreach ($packages as $name => $package)
+						@foreach ($packages as $key => $package)
 							<!--pricing item-->
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 								<div class="onovo-pricing">
 									<div class="onovo-pricing-item">
 										<div class="title">
 											<div class="name">
-												<span> {{ $name }} </span>
+												<span> {{ $package['name'] }} </span>
 											</div>
 											{{-- <div class="subname">
 												<span> 3 Months </span>
@@ -69,7 +69,7 @@
 													</ul>
 												</div>
 											</div>
-											<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="contact-us.html">
+											<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="{{ route('plan-request',['plan' => $key]) }}">
 												<span> Purchase Now </span>
 											</a>
 										</div>
