@@ -8,66 +8,13 @@ use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
+    private $packages;
 
-    const PACKAGES = [
-        [
-            'name' => 'ZERO PACKAGE',
-            'price' => 100,
-            'features' => [
-                'limited to 30 creatives per month',
-                '1 brand',
-            ]
-        ],
-        [
-            'name' => 'One PACKAGE',
-            'price' => 200,
-            'features' => [
-                'limited to 30 creatives per month',
-                '1 dedicated graphic designer',
-                '10 brand',
-            ]
-        ],
-        [
-            'name' => 'Silver Package',
-            'price' => 300,
-            'features' => [
-                'limited to 30 creatives per month',
-                '1 dedicated graphic designer',
-                '20 revisions',
-                '1 brand',
-            ],
-        ],
-        [
-            'name' => 'Gold Package',
-            'price' => 400,
-            'features' => [
-                'limited to 30 creatives per month',
-                '100 dedicated graphic designer',
-                '2 revisions',
-                '1 brand',
-            ],
-        ],
-        [
-            'name' => 'Corporate Package',
-            'price' => 200,
-            'features' => [
-                'limited to 30 creatives per month',
-                '1 dedicated graphic designer',
-                '2 revisions',
-                '12 brand',
-            ],
-        ],
-        [
-            'name' => 'Elite Package',
-            'price' => 200,
-            'features' => [
-                'limited to 30 creatives per month',
-                '1 dedicated graphic designer',
-                '2 revisions',
-                '1 brand',
-            ],
-        ],
-    ];
+    // make construct function
+    public function __construct()
+    {
+        $this->packages = config('constants.packages');
+    }
 
     public function index(Request $request)
     {
@@ -77,7 +24,7 @@ class HomeController extends Controller
     public function packages(Request $request)
     {
 
-        $packages = self::PACKAGES;
+        $packages = $this->packages;
 
         return view('packages', compact('packages'));
     }
@@ -104,7 +51,7 @@ class HomeController extends Controller
         if(is_null($planRequestedId)){
             abort(404, 'Plan Not Found !');
         }
-        $plans = self::PACKAGES;
+        $plans = $this->packages;
         $package = $plans[$planRequestedId];
 
         return view('plan-request', compact('package', 'planRequestedId'));
@@ -120,7 +67,7 @@ class HomeController extends Controller
             'message' => 'required'
         ]);
 
-        Mail::to('hasnainshoaib@gmail.com')->send(new PackageEmail($request->all()));
+        Mail::to('hasnainshoaib45@gmail.com')->send(new PackageEmail($request->all()));
         
         dd($request->all());
         

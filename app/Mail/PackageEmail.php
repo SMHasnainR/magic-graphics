@@ -13,12 +13,18 @@ class PackageEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $package;
+
+    public $clientDetails;
+
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($request)
     {
-        //
+        $packages = config('constants.packages');
+        $this->clientDetails = $request;
+        $this->package = $packages[$request['package_id']];
     }
 
     /**
@@ -37,7 +43,7 @@ class PackageEmail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.package',
+            view: 'emails.package',
         );
     }
 
