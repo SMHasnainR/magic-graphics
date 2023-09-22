@@ -311,6 +311,7 @@
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 	<script src="assets/js/swiper.js"></script>
 	<script src="assets/js/splitting.js"></script>
 	<script src="assets/js/scroll-out.js"></script>
@@ -320,6 +321,8 @@
 	<script src="assets/js/imagesloaded.pkgd.js"></script>
 	<script src="assets/js/isotope.pkgd.js"></script>
 	<script src="assets/js/common.js"></script>
+
+	@yield('scripts')
 
 </body>
 </html>

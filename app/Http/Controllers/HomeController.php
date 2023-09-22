@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PackageEmail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
-    
+
     const PACKAGES = [
         [
             'name' => 'ZERO PACKAGE',
@@ -67,35 +69,60 @@ class HomeController extends Controller
         ],
     ];
 
-    public function index(Request $request){
+    public function index(Request $request)
+    {
         return view('index');
     }
 
-    public function packages(Request $request){
-        
+    public function packages(Request $request)
+    {
+
         $packages = self::PACKAGES;
-        
-        return view('packages',compact('packages'));
+
+        return view('packages', compact('packages'));
     }
 
-    public function services(){
+    public function services()
+    {
         return view('services');
     }
 
-    public function contact(){
+    public function contact()
+    {
         return view('contact-us');
     }
 
-    public function about(Request $request){
+    public function about(Request $request)
+    {
         return view('about-us');
     }
 
-    public function planRequest(Request $request){
-        
+    public function planRequest(Request $request)
+    {
+
         $planRequestedId =  $request->plan;
+        if(is_null($planRequestedId)){
+            abort(404, 'Plan Not Found !');
+        }
         $plans = self::PACKAGES;
         $package = $plans[$planRequestedId];
 
-        return view('plan-request', compact('package'));
+        return view('plan-request', compact('package', 'planRequestedId'));
+    }
+
+    public function sendPlanRequest(Request $request)
+    {
+        $request->validate([
+            'package_id' => 'required',
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone_no' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:9',
+            'message' => 'required'
+        ]);
+
+        Mail::to('hasnainshoaib@gmail.com')->send(new PackageEmail($request->all()));
+        
+        dd($request->all());
+        
     }
 }

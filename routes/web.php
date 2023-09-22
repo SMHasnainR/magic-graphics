@@ -24,3 +24,4 @@ Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/plan-request', [HomeController::class, 'planRequest'])->name('plan-request');
+Route::post('/plan-request', [HomeController::class, 'sendPlanRequest'])->name('plan-request');

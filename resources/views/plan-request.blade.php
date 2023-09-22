@@ -44,7 +44,9 @@
 
 							<!-- Form -->
 							<div class="onovo-form">
-								<form id="cform" class="cform" method="post">
+								<form id="" class="cform" action="{{ route('plan-request') }}" method="post">
+									@csrf
+									<input type="text" name="package_id" value="{{ $planRequestedId }}" hidden>
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 											<p>
@@ -58,7 +60,7 @@
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 											<p>
-												<input placeholder="Phone Number" type="tel" name="tel" />
+												<input placeholder="Phone Number" type="tel" name="phone_no" />
 											</p>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -209,4 +211,18 @@
 
 		</div>
 
+@endsection
+
+@section('scripts')
+	<script>
+		// console.log('sdfdsdsfsdf')
+		// alert('jdsfsd');		
+		$(document).ready(function(){
+			$('#cform').on('submit', function(e){
+				console.log('cform'); 
+				e.preventDefault();
+				
+			});
+		});
+	</script>
 @endsection
