@@ -1057,10 +1057,14 @@ hr {
   font-style: italic !important;
 }
 
-.alert-success {
+/* .alert-success {
   color: var(--primary-color);
   background: transparent;
   border: none;
+} */
+
+.border-success {
+  border-color: #0f5132!important;
 }
 
 @media (max-width: 767px) {

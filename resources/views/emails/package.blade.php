@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Client Request for Specific Plans</title>
+    <title>Client Request for Plans</title>
 </head>
 <body>
-    <h1>Client Request for Specific Plans</h1>
-    <p>Dear {{ $clientDetails['name'] }},</p>
-    <p>Thank you for your request for specific plans. Below are the details of your request:</p>
+    <h1>Client Request for Plans</h1>
+    <h3>Client Details</h3>
+    <p>Client Name: {{ $clientDetails['name'] }}</p>
+    <p>Email: {{ $clientDetails['email'] }}</p>
+    <p>Phone: {{ $clientDetails['phone_no'] }}</p>
+    <hr>
+    <hr>
+    <p>Plan: <b>{{ $package['name'] }}</b> </p>
+    <p>Requested Features:</p>
     <ul>
-        <li><strong>Plan Name:</strong> {{ $package['name'] }}</li>
-        <li><strong>Requested Features:</strong></li>
-        <ul>
-            @foreach($package['features'] as $feature)
-                <li>{{ $feature }}</li>
-            @endforeach
-        </ul>
+        @foreach($package['features'] as $feature)
+            <li>{{ $feature }}</li>
+        @endforeach
     </ul>
-    <p>If you have any additional comments or questions, please feel free to contact us.</p>
-    <p>Best regards,<br>Your Company Name</p>
 </body>
 </html>

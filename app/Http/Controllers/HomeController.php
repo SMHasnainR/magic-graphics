@@ -46,6 +46,10 @@ class HomeController extends Controller
 
     public function planRequest(Request $request)
     {
+        // if($request->session()->exists('success')){
+        //     dd($request->all(), $request->session()->get('success'));
+        // }
+
 
         $planRequestedId =  $request->plan;
         if(is_null($planRequestedId)){
@@ -69,7 +73,6 @@ class HomeController extends Controller
 
         Mail::to('hasnainshoaib45@gmail.com')->send(new PackageEmail($request->all()));
         
-        dd($request->all());
-        
+        return redirect()->back()->with('success','Your Plan has been requested successfully!');
     }
 }

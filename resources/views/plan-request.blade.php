@@ -42,7 +42,13 @@
 								Then let us know about it and we can see what we can do to help
 							</div>
 
-							<!-- Form -->
+							@if(session('success'))
+								<div class="alert alert-success alert-dismissible fade show" role="alert">
+									{{ session('success') }}
+									<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+								</div>
+							@endif
+														<!-- Form -->
 							<div class="onovo-form">
 								<form id="" class="cform" action="{{ route('plan-request') }}" method="post">
 									@csrf
