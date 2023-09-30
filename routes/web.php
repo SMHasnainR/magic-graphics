@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PackageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,9 +20,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/packages', [HomeController::class, 'packages'])->name('packages');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
-Route::get('/plan-request', [HomeController::class, 'planRequest'])->name('plan-request');
-Route::post('/plan-request', [HomeController::class, 'sendPlanRequest'])->name('plan-request');
+
+// Packages / Pricing Plans
+Route::get('/packages', [PackageController::class, 'packages'])->name('packages');
+Route::get('/plan-request', [PackageController::class, 'planRequest'])->name('plan-request');
+Route::post('/plan-request', [PackageController::class, 'sendPlanRequest'])->name('plan-request');

@@ -720,6 +720,19 @@ textarea {
   -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
 }
 
+input.input-mini{
+  flex: 0 0 auto;
+  width: 4em !important;
+  display: inline;
+  padding: 0 10px;
+  height: 52px;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  margin: 0px 8px;
+}
+.features label{
+  /* white-space: pre-line !important; */
+}
 textarea {
   height: 125px !important;
   padding-top: 20px;

@@ -69,7 +69,7 @@
 													</ul>
 												</div>
 											</div>
-											<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="{{ route('plan-request',['plan' => $key]) }}">
+											<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="{{ route('plan-request',['plan' => $package['id']]) }}">
 												<span> Purchase Now </span>
 											</a>
 										</div>
