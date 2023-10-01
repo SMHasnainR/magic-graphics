@@ -75,49 +75,49 @@
 											</p>
 										</div>
 
-										@if ($planRequestedId === 1)
+										@if ($planRequestedId == 1)
 											<div class="my-3 features">
 												<h5>
 													Features
 												</h5>
-
+												
 												<p>
 													<label for="creatives" class="d-inline px-2">
-															Upto to <input required id="creatives" name="features['creatives']" type="number" class="input-mini"> creatives per month
+															Upto to <input required id="creatives" name="features[creatives]" type="number" class="input-mini"> creatives per month
 													</label>
 												</p>
 												
 												<p>
-													<input required id="graphicDesigners" name="features['graphicDesigners']" type="number" class="input-mini">
+													<input required id="graphicDesigners" name="features[graphicDesigners]" type="number" class="input-mini">
 													<label for="graphicDesigners" class="d-inline px-2">
 														dedicated graphic designer
 													</label>
 												</p>
 												
 												<p>
-													<input required id="motionGraphicDesigner" name="features['motionGraphicDesigner']" type="number" class="input-mini">
+													<input required id="motionGraphicDesigner" name="features[motionGraphicDesigner]" type="number" class="input-mini">
 													<label for="motionGraphicDesigner" class="d-inline px-2">
 														dedicated motion/graphic designer
 													</label>
 												</p>
 												<p>
-													<input required id="videos" name="features['videos']" type="number" class="input-mini">
+													<input required id="videos" name="features[videos]" type="number" class="input-mini">
 													<label for="videos" class="d-inline px-2">
 															videos upto 
-															<input required id="mins" name="features['mins']" type="number" class="input-mini">
+															<input required id="mins" name="features[mins]" type="number" class="input-mini">
 															mins each
 													</label>
 												</p>
 												
 												<p>
-													<input required id="revisions" name="features['revisions']" type="number" class="input-mini">
+													<input required id="revisions" name="features[revisions]" type="number" class="input-mini">
 													<label for="revisions" class="d-inline px-2">
 															Revisions
 													</label>
 												</p>
 
 												<p>
-													<input required id="brands" name="features['brands']" type="number" class="input-mini">
+													<input required id="brands" name="features[brands]" type="number" class="input-mini">
 													<label for="brands" class="d-inline px-2">
 														brands
 													</label>

@@ -22,9 +22,11 @@ class PackageEmail extends Mailable
      */
     public function __construct($request)
     {
-        $packages = config('constants.packages');
+        $packages = collect(config('constants.packages'));
+        $this->package = $packages->firstOrFail(function($item) use($request) {
+            return $item['id'] == $request['package_id'];
+        });
         $this->clientDetails = $request;
-        $this->package = $packages[$request['package_id']];
     }
 
     /**

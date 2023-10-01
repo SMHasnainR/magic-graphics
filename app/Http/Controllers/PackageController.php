@@ -55,6 +55,12 @@ class PackageController extends Controller
             'phone_no' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:9',
             'message' => 'required'
         ]);
+        
+        if($request->package_id == 1){
+            $request->validate([
+                'features' => 'required'
+            ]);
+        }
 
         Mail::to('hasnainshoaib45@gmail.com')->send(new PackageEmail($request->all()));
         
