@@ -1492,7 +1492,7 @@ a.onovo-btn-circle,
 
 a.onovo-btn.btn--active,
 .onovo-btn.btn--active {
-  color: var(--primary-color);
+  color: white;
 }
 
 .onovo-btn.btn--active::before {
@@ -6029,10 +6029,11 @@ ul.onovo-footer-menu li {
 }
 
 .onovo-pricing-item .name {
-  margin: 0 0 10px 0;
-  font-size: 22px;
+  margin: 0 0 20px 0;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1;
+  text-align: center;
 }
 
 .onovo-pricing-item .subname {

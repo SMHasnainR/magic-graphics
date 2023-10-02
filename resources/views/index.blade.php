@@ -1,644 +1,1168 @@
 @extends('layouts.main')
 
 @section('wrapper')
-    		<!-- Wrapper -->
-		<div class="wrapper">
-
-			<!-- Onovo Hero -->
-			<section class="onovo-section onovo-hero">
-				<div class="image">
-					{{-- <video autoplay muted loop playsinline id="heroVideo">
-						<source src="assets/images/stvideo.mp4" type="video/mp4">
-					</video> --}}
-					<img src="assets/images/1000_F_499563985_5epEZtgJYmAgVpxrcXrw8EyIjJM9ukmt.jpg" alt="">
-					<div class="ovrl" style="opacity: 0.25;"></div>
-				</div>
-				<div class="container">
-					<h1 class="title onovo-text-white">
-						{{-- <span data-splitting data-onovo-scroll> We Make <br>Everything <span class="onovo-sep word">
-								<i class="sep-img" style="background-image: url(assets/images/title_icon.svg);"></i>
-							</span>
-						</span> --}}
-						
-						<span data-splitting data-onovo-scroll> Unlimited Graphics <br> For a Fixed Price <span class="onovo-sep word">
-								<i class="sep-img" style="background-image: url(assets/images/title_icon.svg);"></i>
-							</span>
-						</span>
-
-					</h1>
-					<div class="text">
-						<div class="subtitle onovo-text-white">
-							<div data-splitting data-onovo-scroll> Creative studio at the <br> intersection of art, design <br> and technology. </div>
-						</div>
-					</div>
-					<a href="#" class="onovo-play-btn">
-						<span class="play-circles"></span>
-						<span class="play-lines">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-						</span>
-					</a>
-				</div>
-			</section>
-
-			<!-- Onovo Services -->
-			<section class="onovo-section gap-top-140 gap-bottom-140">
-				<div class="container-xl">
-
-					<!-- Services items -->
-					<div class="row onovo-services-grid-fw">
-
-						<!--service item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
-							<div class="onovo-service-grid-item onovo-hover-1">
-								<div class="image">
-									<a href="services.html">
-										<img decoding="async" src="assets/images/serv-icon1.png" alt="Creation" />
-									</a>
-								</div>
-								<h5 class="onovo-title-3">
-									<a href="services.html">
-										<span> Creation </span>
-									</a>
-								</h5>
-								<div class="onovo-text">
-									<div>
-										<p>Developing websites is about so much more than marketing. It’s also about aesthetics.</p>
-									</div>
-								</div>
-								<div class="onovo-bubble">
-									<div class="bubble-1"></div>
-									<div class="bubble-2"></div>
-									<div class="bubble-3"></div>
-								</div>
-							</div>
-						</div>
-
-						<!--service item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
-							<div class="onovo-service-grid-item onovo-hover-1 active active--default">
-								<div class="image">
-									<a href="projects.html">
-										<img decoding="async" src="assets/images/serv-icon2.png" alt="Websites" />
-									</a>
-								</div>
-								<h5 class="onovo-title-3">
-									<a href="projects.html">
-										<span> Websites </span>
-									</a>
-								</h5>
-								<div class="onovo-text">
-									<div>
-										<p>Developing websites is about so much more than marketing. It’s also about aesthetics.</p>
-									</div>
-								</div>
-								<div class="onovo-bubble">
-									<div class="bubble-1"></div>
-									<div class="bubble-2"></div>
-									<div class="bubble-3"></div>
-								</div>
-							</div>
-						</div>
-
-						<!--service item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
-							<div class="onovo-service-grid-item onovo-hover-1">
-								<div class="image">
-									<a href="about-us.html">
-										<img decoding="async" src="assets/images/serv-icon3.png" alt="Studio" />
-									</a>
-								</div>
-								<h5 class="onovo-title-3">
-									<a href="about-us.html">
-										<span> Studio </span>
-									</a>
-								</h5>
-								<div class="onovo-text">
-									<div>
-										<p>Developing websites is about so much more than marketing. It’s also about aesthetics.</p>
-									</div>
-								</div>
-								<div class="onovo-bubble">
-									<div class="bubble-1"></div>
-									<div class="bubble-2"></div>
-									<div class="bubble-3"></div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<!-- Onovo About -->
-			<section class="onovo-section gap-bottom-140">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-8 col-lg-12">
-
-									<!-- Heading -->
-									<div class="onovo-heading gap-bottom-40">
-										<div class="onovo-subtitle-1">
-											<span> Welcome to Magic Graphics Design </span>
-										</div>
-										<h2 class="onovo-title-2">
-											We're more than just a design studio – we're your creative partner on the journey to visual excellence.
-											{{-- <span> A Design Agency <br>Delivering Success by <br>Winning Hearts </span> --}}
-										</h2>
-									</div>
-
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-12 hide-on-desktop gap-bottom-60">
-
-									<!-- Number -->
-									<div class="onovo-number onovo-circle-text mrg-left">
-										<div class="num onovo-text-white">
-											<span> 14 </span>
-										</div>
-										<div class="label onovo-text-black onovo-circle-text-label"> Years of Digital Solutions Experience </div>
-									</div>
-
-								</div>
-							</div>
-
-							<!-- Description -->
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-									<h5 class="text-uppercase">Our Mission</h5>
-									<p>
-										We are dedicated to delivering exceptional graphic design solutions that not only meet but exceed our clients' expectations. We believe that every project is an opportunity to create magic, and we are committed to making each design a masterpiece.
-									</p>
-									{{-- <p>From the moment our company was founded we have helped our clients find <strong>exceptional solutions for their businesses</strong> memorable brands and digital products. Our expertise grows with each year, and our accumulated experience. </p> --}}
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-									<h5 class="text-uppercase">Our Goal</h5>
-									<p>
-										Our goal at Magic Graphics is to consistently deliver innovative and high-quality graphic design solutions that exceed our clients' expectations, ensuring their success in the visual realm.
-									</p>
-									{{-- <p>Our goal is to deliver amazing experiences that make people talk, and build strategic value for brands, tech, entertainment.</p> --}}
-									<a class="onovo-btn onovo-hover-btn" href="{{ route('about') }}">
-										<i class="arrow"><span></span></i>
-										<span> More About Us </span>
-									</a>
-								</div>
-							</div>
-
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 hide-on-mobile">
-
-							<!-- Number -->
-							<div class="onovo-number onovo-circle-text mrg-right">
-								<div class="num onovo-text-white">
-									<span> 14 </span>
-								</div>
-								<div class="label onovo-text-black onovo-circle-text-label"> Years of Digital Solutions Experience </div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Onovo Ticker -->
-			<section class="onovo-section gap-bottom-140">
-
-				<!-- Ticker swiper -->
-				<div class="onovo-ticker-slider gap-top-90 gap-bottom-100">
-					<div class="swiper-container js-ticker-slider" data-autoplay="12000">
-						<div class="swiper-wrapper">
-
-							<!--slide-->
-							<div class="swiper-slide">
-								<h5 class="title onovo-text-white">
-									<a href="service-detail.html">
-										<span> - Poster Design </span>
-									</a>
-								</h5>
-							</div>
-
-							<!--slide-->
-							<div class="swiper-slide">
-								<h5 class="title onovo-text-white">
-									<a href="service-detail.html">
-										<span> - Brochure  </span>
-									</a>
-								</h5>
-							</div>
-
-							<!--slide-->
-							<div class="swiper-slide">
-								<h5 class="title onovo-text-white">
-									<a href="service-detail.html">
-										<span> - Video Editing </span>
-									</a>
-								</h5>
-							</div>
-
-							<!--slide-->
-							<div class="swiper-slide">
-								<h5 class="title onovo-text-white">
-									<a href="service-detail.html">
-										<span> - Machine Learning / AI </span>
-									</a>
-								</h5>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-			</section>
-
-			<!-- Onovo Showcase -->
-			<section class="onovo-section gap-bottom-140" style="border-bottom: 1px solid #555;">
-				<div class="container">
-
-					<!-- Heading -->
-					<div class="onovo-heading gap-bottom-40">
-						<div class="onovo-subtitle-1">
-							<span> Featured Projects </span>
-						</div>
-						<h2 class="onovo-title-2">
-							<span> Studio Showcase </span>
-						</h2>
-					</div>
-
-					<!-- Showcase -->
-					<div class="onovo-showcase gap-bottom-40">
-						<div class="img-circle onovo-circle-move"></div>
-
-						<!-- Showcase items -->
-						<div class="onovo-showcase-items">
-
-							<!--showcase item-->
-							<div class="onovo-showcase-item">
-								<div class="category">
-									<a href="project-detail.html">
-										<span data-splitting data-onovo-scroll>
-											<span>Branding</span>
-										</span>
-									</a>
-								</div>
-								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="onovo-lnk" data-splitting data-onovo-scroll> Museums Art Concept </span>
-									</a>
-								</h3>
-								<div class="image" data-onovo-overlay data-onovo-scroll>
-									<span class="img" style="background-image: url(assets/images/project-n01-3-1200x900.jpg);"></span>
-								</div>
-							</div>
-
-							<!--showcase item-->
-							<div class="onovo-showcase-item">
-								<div class="category">
-									<a href="project-detail.html">
-										<span data-splitting data-onovo-scroll>
-											<span>Marketing</span>
-										</span>
-									</a>
-								</div>
-								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="onovo-lnk" data-splitting data-onovo-scroll> Market Economy Graphics </span>
-									</a>
-								</h3>
-								<div class="image" data-onovo-overlay data-onovo-scroll>
-									<span class="img" style="background-image: url(assets/images/project-2-2-1200x982.jpg);"></span>
-								</div>
-							</div>
-
-							<!--showcase item-->
-							<div class="onovo-showcase-item">
-								<div class="category">
-									<a href="project-detail.html">
-										<span data-splitting data-onovo-scroll>
-											<span>Design</span>
-										</span>
-									</a>
-								</div>
-								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="onovo-lnk" data-splitting data-onovo-scroll> Headphones 3D Rendering </span>
-									</a>
-								</h3>
-								<div class="image" data-onovo-overlay data-onovo-scroll>
-									<span class="img" style="background-image: url(assets/images/project-2-1200x988.jpg);"></span>
-								</div>
-							</div>
-
-							<!--showcase item-->
-							<div class="onovo-showcase-item">
-								<div class="category">
-									<a href="project-detail.html">
-										<span data-splitting data-onovo-scroll>
-											<span>Design</span>
-										</span>
-									</a>
-								</div>
-								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="onovo-lnk" data-splitting data-onovo-scroll> Business Card Logo </span>
-									</a>
-								</h3>
-								<div class="image" data-onovo-overlay data-onovo-scroll>
-									<span class="img" style="background-image: url(assets/images/project-4.jpg);"></span>
-								</div>
-							</div>
-
-							<!--showcase item-->
-							<div class="onovo-showcase-item">
-								<div class="category">
-									<a href="project-detail.html">
-										<span data-splitting data-onovo-scroll>
-											<span>Interactive</span>
-										</span>
-									</a>
-								</div>
-								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="onovo-lnk" data-splitting data-onovo-scroll> Flower Store Mobile App </span>
-									</a>
-								</h3>
-								<div class="image" data-onovo-overlay data-onovo-scroll>
-									<span class="img" style="background-image: url(assets/images/project-3-1200x750.jpg);"></span>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-					<!-- Button -->
-					<a class="onovo-btn onovo-hover-btn" href="projects.html">
-						<i class="arrow">
-							<span></span>
-						</i>
-						<span> All Projects </span>
-					</a>
-
-				</div>
-			</section>
-
-			<!-- Onovo Reviews -->
-			<section class="onovo-section gap-bottom-140">
-				<div class="container">
-
-					<!-- Reviews -->
-					<div class="onovo-reviews">
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-
-								<!-- Heading -->
-								<div class="onovo-reviews-titles">
-									<h2 class="onovo-title-2">
-										<span data-splitting data-onovo-scroll> Testimonials </span>
-									</h2>
-									<div class="onovo-reviews-summary">
-										<span class="label onovo-text-black">
-											<span data-splitting data-onovo-scroll> 4.0 </span>
-										</span>
-										<span class="onovo-stars">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="far fa-star"></i>
-										</span>
-										<span class="label">
-											<span data-splitting data-onovo-scroll> Rating from all Client's </span>
-										</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-
-								<!-- Reviews swiper -->
-								<div class="onovo-reviews-carousel">
-									<div class="swiper-container js-reviews-carousel" data-loop="false">
-										<div class="swiper-wrapper">
-
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Their high level of customer service <br />complemented their technical expertise. <br />They were responsive, supportive, and <br />communicative. Their dedication to <br />the project was impressive. ” </p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Thomas Smith </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Customer Support </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
-
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Their high level of customer service <br />complemented their technical expertise. <br />They were responsive, supportive, and <br />communicative. Their dedication to <br />the project was impressive. ” </p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Mike Cameron </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Code Quality </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="far fa-star"></i>
-												</div>
-											</div>
-
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Their high level of customer service <br />complemented their technical expertise. <br />They were responsive, supportive, and <br />communicative. Their dedication to <br />the project was impressive. ” </p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Jessica Brown </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Design Quality </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
-
-										</div>
-									</div>
-
-									<!--navs-->
-									<div class="js-reviews-carousel-navs">
-										<div class="onovo-prev js-reviews-carousel-prev onovo-hover-2">
-											<i></i>
-										</div>
-										<div class="onovo-next js-reviews-carousel-next onovo-hover-2">
-											<i></i>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</section>
-
-			<!-- Onovo Video -->
-			<section class="onovo-section">
-				<div class="container">
-
-					<!--video-->
-					<div class="onovo-video" data-onovo-overlay data-onovo-scroll>
-						<div class="image" style="background-image: url(assets/images/posts1.jpg);"></div>
-						<iframe class="js-video-iframe" data-src="https://www.youtube.com/embed/Gu6z6kIukgg?showinfo=0&rel=0&autoplay=1"></iframe>
-						<div class="play onovo-circle-text">
-							<div class="arrow"></div>
-							<div class="label onovo-text-black onovo-circle-text-label"> Play Video - Play Video - Play Video - </div>
-						</div>
-					</div>
-
-				</div>
-			</section>
-
-			<!-- Onovo Numbers -->
-			<section class="onovo-section gap-top-140 gap-bottom-140">
-				<div class="container">
-
-					<!-- Numbers items -->
-					<div class="row">
-
-						<!--number item-->
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-center">
-							<div class="onovo-counter">
-								<div class="num onovo-text-white js-counter" data-end-value="23">0</div>
-								<div class="label"> Team members </div>
-							</div>
-						</div>
-
-						<!--number item-->
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-center">
-							<div class="onovo-counter">
-								<div class="num onovo-text-white js-counter" data-end-value="99">0</div>
-								<div class="num-after onovo-text-white"> + </div>
-								<div class="label"> Completed projects </div>
-							</div>
-						</div>
-
-						<!--number item-->
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-center">
-							<div class="onovo-counter">
-								<div class="num onovo-text-white js-counter" data-end-value="12">0</div>
-								<div class="num-after onovo-text-white"> M </div>
-								<div class="label"> Lines of code </div>
-							</div>
-						</div>
-
-					</div>
-					
-				</div>
-			</section>
-
-			<!-- Onovo CTA -->
-			<section class="onovo-section gap-top-140 gap-bottom-140" style="background-image: url(assets/images/cta-bg-1.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-
-							<!-- Heading -->
-							<div class="onovo-heading gap-bottom-40 onovo-text-white">
-								<div class="onovo-subtitle-1">
-									<span> Get in Touch </span>
-								</div>
-								<h2 class="onovo-title-2">
-									<span> Send Us Your <br>
-										<strong>Bright Ideas</strong>
-									</span>
-								</h2>
-							</div>
-
-							<!-- Text -->
-							<div class="onovo-cta-text">
-								<a href="mailto:infoname@domain.com" target="_blank">infoname@domain.com</a>
-								<p>36 East 8th Street, New York, <br />NY 10003, United States. </p>
-							</div>
-
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-
-							<!-- Social -->
-							<div class="onovo-cta-social">
-								<div class="image" 
-								{{-- style="background-image: url(assets/images/cta-circle2.png);" --}}
-								>
-									<div class="cta-img-circle img-circle--1"></div>
-									<div class="cta-img-circle img-circle--2"></div>
-									<div class="cta-img-circle img-circle--3"></div>
-								</div>
-								<div class="desc">
-									<ul>
-										<li>
-											<a class="onovo-btn btn--white btn--large btn--icon onovo-hover-btn" href="http://facebook.com" target="_blank">
-												<i aria-hidden="true" class="fab fa-facebook-f"></i>
-												<span> Facebook </span>
-											</a>
-										</li>
-										<li>
-											<a class="onovo-btn btn--white btn--large btn--icon onovo-hover-btn" href="http://instagram.com" target="_blank">
-												<i aria-hidden="true" class="fab fa-instagram"></i>
-												<span> Instagram </span>
-											</a>
-										</li>
-										<li>
-											<a class="onovo-btn btn--white btn--large btn--icon onovo-hover-btn" href="http://twitter.com" target="_blank">
-												<i aria-hidden="true" class="fab fa-twitter"></i>
-												<span> Twitter </span>
-											</a>
-										</li>
-										<li>
-											<a class="onovo-btn btn--white btn--large btn--icon onovo-hover-btn" href="http://linkedin.com" target="_blank">
-												<i aria-hidden="true" class="fab fa-linkedin-in"></i>
-												<span> LinkedIn </span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-		</div>
-
+    {{-- assets/images/1000_F_499563985_5epEZtgJYmAgVpxrcXrw8EyIjJM9ukmt.jpg --}}
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Onovo Hero -->
+        <section class="onovo-section onovo-hero hero--two">
+
+            <!-- Hero swiper -->
+            <div class="swiper-container js-hero-slider" data-loop="true" data-autoplay="6000">
+                <div class="swiper-wrapper">
+
+                    <!--slide-->
+                    <div class="swiper-slide" data-swiper-autoplay>
+                        <div class="onovo-hero-slide-item">
+                            <div class="image" data-dimg="assets/images/hero-digital-1.jpg"
+                                data-mimg="assets/images/hero-digital-1.jpg">
+                                <div class="ovrl" style="opacity: 0.95;"></div>
+                            </div>
+                            <div class="container">
+                                <div class="titles">
+                                    <h1 class="title onovo-text-white">
+                                        <span data-splitting> Solid Design and <br />Development Expertise </span>
+                                    </h1>
+                                    <div class="text">
+                                        <div class="subtitle onovo-text-white subtitle--left">
+                                            <div data-splitting> We build readymade websites, mobile apps <br>and elaborate
+                                                online business services. </div>
+                                        </div>
+                                        <div class="onovo-bts">
+                                            <a class="onovo-btn btn--border btn--white btn--color onovo-hover-btn"
+                                                href="about-us.html">
+                                                <i class="arrow">
+                                                    <span></span>
+                                                </i>
+                                                <span> Learn More </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--slide-->
+                    <div class="swiper-slide" data-swiper-autoplay>
+                        <div class="onovo-hero-slide-item">
+                            <div class="image video">
+                                <video autoplay muted loop playsinline>
+                                    <source src="assets/images/video-digital1.mp4" type="video/mp4">
+                                </video>
+                                <div class="ovrl" style="opacity: 0.95;"></div>
+                            </div>
+                            <div class="container">
+                                <div class="titles">
+                                    <h1 class="title onovo-text-white">
+                                        <span data-splitting> Technology &amp; Mobile <br />App Development </span>
+                                    </h1>
+                                    <div class="text">
+                                        <div class="subtitle onovo-text-white subtitle--left">
+                                            <div data-splitting> We build readymade websites, mobile apps <br>and elaborate
+                                                online business services. </div>
+                                        </div>
+                                        <div class="onovo-bts">
+                                            <a class="onovo-btn btn--border btn--white btn--color onovo-hover-btn"
+                                                href="projects.html">
+                                                <i class="arrow">
+                                                    <span></span>
+                                                </i>
+                                                <span> View Projects </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--slide-->
+                    <div class="swiper-slide" data-swiper-autoplay>
+                        <div class="onovo-hero-slide-item">
+                            <div class="image" data-dimg="assets/images/posts4.jpg" data-mimg="assets/images/posts4.jpg">
+                                <div class="ovrl" style="opacity: 0.95;"></div>
+                            </div>
+                            <div class="container">
+                                <div class="titles">
+                                    <h1 class="title onovo-text-white">
+                                        <span data-splitting> Modern 3D Animation <br />Product Design </span>
+                                    </h1>
+                                    <div class="text">
+                                        <div class="subtitle onovo-text-white subtitle--left">
+                                            <div data-splitting> We build readymade websites, mobile apps, and elaborate
+                                                online business services. </div>
+                                        </div>
+                                        <div class="onovo-bts">
+                                            <a class="onovo-btn btn--border btn--white btn--color onovo-hover-btn"
+                                                href="services.html">
+                                                <i class="arrow">
+                                                    <span></span>
+                                                </i>
+                                                <span> Our Services </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--navs-->
+                <div class="onovo-navs js-hero-slider-navs">
+                    <div class="onovo-prev js-hero-slider-prev nav--white onovo-hover-2">
+                        <i></i>
+                    </div>
+                    <div class="onovo-paginations-container pag--white">
+                        <div class="onovo-paginations js-hero-pagination"></div>
+                    </div>
+                    <div class="onovo-next js-hero-slider-next nav--white onovo-hover-2">
+                        <i></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Onovo Services -->
+        <section class="onovo-section gap-top-140 gap-bottom-140">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="onovo-heading gap-bottom-40 align-center">
+                    <div class="onovo-subtitle-1">
+                        <span> Welcome to Onovo </span>
+                    </div>
+                    <h2 class="onovo-title-2">
+                        <span> Digital Creative Agency <br />with Breaking Ideas </span>
+                    </h2>
+                </div>
+
+                <!-- Description -->
+                <div class="row gap-bottom-60">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-3 align-center">
+                        <div class="onovo-text">
+                            <p>From the moment our company was founded, we have helped our clients find <strong>exceptional
+                                    solutions for their businesses</strong>, creating memorable brands and digital products.
+                                Our expertise grows with each year. </p>
+                            <p><img src="assets/images/signature.png" alt="" /></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services items -->
+                <div class="row gap-row">
+
+                    <!--service item-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="onovo-service-item">
+                            <div class="image">
+                                <a href="service-detail.html">
+                                    <img src="assets/images/serv-icon4.png" alt="Brand Creation" />
+                                </a>
+                            </div>
+                            <div class="onovo-service-item-inner onovo-hover-3 onovo-hover-black">
+                                <h5 class="title">
+                                    <a href="service-detail.html">
+                                        <span data-splitting data-onovo-scroll> Brand Creation </span>
+                                    </a>
+                                </h5>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Brand Strategy </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Visual Identity </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Naming </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Toolkits </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Guidelines </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--service item-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="onovo-service-item">
+                            <div class="image">
+                                <a href="service-detail.html">
+                                    <img src="assets/images/serv-icon5.png" alt="Web Campaigns" />
+                                </a>
+                            </div>
+                            <div class="onovo-service-item-inner onovo-hover-3 onovo-hover-black">
+                                <h5 class="title">
+                                    <a href="service-detail.html">
+                                        <span data-splitting data-onovo-scroll> Web Campaigns </span>
+                                    </a>
+                                </h5>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Creative Strategy </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Creative Direction </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Concepts </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Copywriting </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Social Media </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--service item-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="onovo-service-item">
+                            <div class="image">
+                                <a href="service-detail.html">
+                                    <img src="assets/images/serv-icon6.png" alt="UX / UI Design" />
+                                </a>
+                            </div>
+                            <div class="onovo-service-item-inner onovo-hover-3 onovo-hover-black">
+                                <h5 class="title">
+                                    <a href="service-detail.html">
+                                        <span data-splitting data-onovo-scroll> UX / UI Design </span>
+                                    </a>
+                                </h5>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Native and Web Apps </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Campaign / Brand Sites </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Machine Learning / AI </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Brand Design </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="onovo-lnk" href="service-detail.html">
+                                                <span data-splitting data-onovo-scroll> Product Animation Design </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Onovo Projects -->
+        <section class="onovo-section gap-top-140 gap-bottom-140">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+
+                        <!-- Heading -->
+                        <div class="onovo-heading gap-bottom-40">
+                            <div class="onovo-subtitle-1">
+                                <span> Featured Projects </span>
+                            </div>
+                            <h2 class="onovo-title-2">
+                                <span> Take a Look at Some <br>of Our Work </span>
+                            </h2>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 align-right hide-on-mobile">
+
+                        <!-- Button -->
+                        <a class="onovo-btn onovo-hover-btn" href="projects.html">
+                            <i class="arrow">
+                                <span></span>
+                            </i>
+                            <span> All Projects </span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Projects Side -->
+                <div class="onovo-portfolio portfolio--side">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+
+                            <!-- Filter projects-->
+                            <div class="onovo-filter-container">
+                                <div class="onovo-filter js-onovo-filter">
+                                    <ul>
+                                        <li>
+                                            <button class="onovo-filter-item item--active" type="button"
+                                                data-filter="*">
+                                                <span class="onovo-lnk" data-splitting data-onovo-scroll>All
+                                                    Projects</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="onovo-filter-item" type="button" data-filter=".marketing">
+                                                <span class="onovo-lnk" data-splitting data-onovo-scroll>Marketing</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="onovo-filter-item" type="button" data-filter=".interactive">
+                                                <span class="onovo-lnk" data-splitting data-onovo-scroll>Interactive</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="onovo-filter-item" type="button" data-filter=".design">
+                                                <span class="onovo-lnk" data-splitting data-onovo-scroll>Design</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="onovo-filter-item" type="button" data-filter=".branding">
+                                                <span class="onovo-lnk" data-splitting data-onovo-scroll>Branding</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+
+                            <!--Projects items-->
+                            <div class="row onovo-portfolio-items">
+
+                                <!--project item-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 onovo-portfolio-col branding ">
+                                    <div class="onovo-portfolio-item">
+                                        <div class="image" data-onovo-overlay data-onovo-scroll>
+                                            <a href="project-detail.html" class="onovo-hover-3">
+                                                <img src="assets/images/project-n01-3-1080x800.jpg"
+                                                    alt="Museums Art Concept" />
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="title">
+                                                <a class="onovo-lnk" href="project-detail.html">
+                                                    <span data-splitting data-onovo-scroll>Museums Art Concept</span>
+                                                </a>
+                                            </h5>
+                                            <div class="text">
+                                                <div data-splitting data-onovo-scroll>
+                                                    <span>branding <em>,</em>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--project item-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 onovo-portfolio-col interactive ">
+                                    <div class="onovo-portfolio-item">
+                                        <div class="image" data-onovo-overlay data-onovo-scroll>
+                                            <a href="project-detail.html" class="onovo-hover-3">
+                                                <img src="assets/images/project-3-1080x800.jpg"
+                                                    alt="Flower Store Mobile App" />
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="title">
+                                                <a class="onovo-lnk" href="project-detail.html">
+                                                    <span data-splitting data-onovo-scroll>Flower Store Mobile App</span>
+                                                </a>
+                                            </h5>
+                                            <div class="text">
+                                                <div data-splitting data-onovo-scroll>
+                                                    <span>interactive <em>,</em>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--project item-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 onovo-portfolio-col design ">
+                                    <div class="onovo-portfolio-item">
+                                        <div class="image" data-onovo-overlay data-onovo-scroll>
+                                            <a href="project-detail.html" class="onovo-hover-3">
+                                                <img src="assets/images/project-4-1080x800.jpg"
+                                                    alt="Business Card Logo" />
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="title">
+                                                <a class="onovo-lnk" href="project-detail.html">
+                                                    <span data-splitting data-onovo-scroll>Business Card Logo</span>
+                                                </a>
+                                            </h5>
+                                            <div class="text">
+                                                <div data-splitting data-onovo-scroll>
+                                                    <span>design <em>,</em>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--project item-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 onovo-portfolio-col marketing ">
+                                    <div class="onovo-portfolio-item">
+                                        <div class="image" data-onovo-overlay data-onovo-scroll>
+                                            <a href="project-detail.html" class="onovo-hover-3">
+                                                <img src="assets/images/project-2-2-1080x800.jpg"
+                                                    alt="Market Economy Graphics" />
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="title">
+                                                <a class="onovo-lnk" href="project-detail.html">
+                                                    <span data-splitting data-onovo-scroll>Market Economy Graphics</span>
+                                                </a>
+                                            </h5>
+                                            <div class="text">
+                                                <div data-splitting data-onovo-scroll>
+                                                    <span>marketing <em>,</em>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--project item-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 onovo-portfolio-col design ">
+                                    <div class="onovo-portfolio-item">
+                                        <div class="image" data-onovo-overlay data-onovo-scroll>
+                                            <a href="project-detail.html" class="onovo-hover-3">
+                                                <img src="assets/images/project-2-1080x800.jpg"
+                                                    alt="Headphones 3D Rendering" />
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="title">
+                                                <a class="onovo-lnk" href="project-detail.html">
+                                                    <span data-splitting data-onovo-scroll>Headphones 3D Rendering</span>
+                                                </a>
+                                            </h5>
+                                            <div class="text">
+                                                <div data-splitting data-onovo-scroll>
+                                                    <span>design <em>,</em>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--project item-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 onovo-portfolio-col branding ">
+                                    <div class="onovo-portfolio-item">
+                                        <div class="image" data-onovo-overlay data-onovo-scroll>
+                                            <a href="project-detail.html" class="onovo-hover-3">
+                                                <img src="assets/images/project-1-1080x800.jpg"
+                                                    alt="Circle Cardboard Concept" />
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="title">
+                                                <a class="onovo-lnk" href="project-detail.html">
+                                                    <span data-splitting data-onovo-scroll>Circle Cardboard Concept</span>
+                                                </a>
+                                            </h5>
+                                            <div class="text">
+                                                <div data-splitting data-onovo-scroll>
+                                                    <span>branding <em>,</em>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--project item-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 onovo-portfolio-col interactive ">
+                                    <div class="onovo-portfolio-item">
+                                        <div class="image" data-onovo-overlay data-onovo-scroll>
+                                            <a href="project-detail.html" class="onovo-hover-3">
+                                                <img src="assets/images/project-8-1080x800.jpg"
+                                                    alt="Daily Weather Mobile App" />
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="title">
+                                                <a class="onovo-lnk" href="project-detail.html">
+                                                    <span data-splitting data-onovo-scroll>Daily Weather Mobile App</span>
+                                                </a>
+                                            </h5>
+                                            <div class="text">
+                                                <div data-splitting data-onovo-scroll>
+                                                    <span>interactive <em>,</em>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--project item-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 onovo-portfolio-col marketing ">
+                                    <div class="onovo-portfolio-item">
+                                        <div class="image" data-onovo-overlay data-onovo-scroll>
+                                            <a href="project-detail.html" class="onovo-hover-3">
+                                                <img src="assets/images/project-5-1080x800.jpg"
+                                                    alt="Colorful Ice Cream Ornament" />
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="title">
+                                                <a class="onovo-lnk" href="project-detail.html">
+                                                    <span data-splitting data-onovo-scroll>Colorful Ice Cream
+                                                        Ornament</span>
+                                                </a>
+                                            </h5>
+                                            <div class="text">
+                                                <div data-splitting data-onovo-scroll>
+                                                    <span>marketing <em>,</em>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Button -->
+                            <div class="align-center hide-on-desktop">
+                                <a class="onovo-btn onovo-hover-btn" href="projects.html">
+                                    <i class="arrow">
+                                        <span></span>
+                                    </i>
+                                    <span> View All Projects </span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Onovo Team -->
+        <section class="onovo-section gap-top-140 gap-bottom-140">
+            <div class="container">
+
+                <!-- Team items -->
+                <div class="row gap-row align-center">
+
+                    <!-- Heading -->
+                    <div class="col-xs-12 col-sm-12 col-md-11 col-lg-5">
+                        <div class="onovo-heading align-left">
+                            <div class="onovo-subtitle-1">
+                                <span> Meet Our Company Family </span>
+                            </div>
+                            <h2 class="onovo-title-2">
+                                <span> Our Team is The Difference. <br>Our Chemistry is The Spark. </span>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--team item-->
+                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"></div>
+
+                    <!--team item-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="onovo-team-two">
+                            <div class="onovo-team-two-item">
+                                <div class="image onovo-hover-3 onovo-hover-black-30" data-onovo-overlay data-onovo-scroll>
+                                    <a href="team-detail.html">
+                                        <img src="assets/images/team-2-1000x1357.jpg" alt="Thomas Jackki" />
+                                    </a>
+                                    <div class="onovo-social-2">
+                                        <ul>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="facebook.com"
+                                                    title="Facebook" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="linkedin.com"
+                                                    title="LinkedIn" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h5 class="title">
+                                        <a href="team-detail.html" class="onovo-lnk">
+                                            <span data-splitting data-onovo-scroll> Thomas Jackki </span>
+                                        </a>
+                                    </h5>
+                                    <div class="onovo-subtitle-1">
+                                        <span data-splitting data-onovo-scroll> UI &amp; UX Designer </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--team item-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="onovo-team-two">
+                            <div class="onovo-team-two-item">
+                                <div class="image onovo-hover-3 onovo-hover-black-30" data-onovo-overlay data-onovo-scroll>
+                                    <a href="team-detail.html">
+                                        <img src="assets/images/team-6-1000x1357.jpg" alt="Melanie Robinson" />
+                                    </a>
+                                    <div class="onovo-social-2">
+                                        <ul>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="facebook.com"
+                                                    title="Facebook" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="linkedin.com"
+                                                    title="LinkedIn" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h5 class="title">
+                                        <a href="team-detail.html" class="onovo-lnk">
+                                            <span data-splitting data-onovo-scroll> Melanie Robinson </span>
+                                        </a>
+                                    </h5>
+                                    <div class="onovo-subtitle-1">
+                                        <span data-splitting data-onovo-scroll> Seo &amp; Marketing </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--team item-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="onovo-team-two">
+                            <div class="onovo-team-two-item">
+                                <div class="image onovo-hover-3 onovo-hover-black-30" data-onovo-overlay data-onovo-scroll>
+                                    <a href="team-detail.html">
+                                        <img src="assets/images/team-1-1000x1357.jpg" alt="Steven Morrison" />
+                                    </a>
+                                    <div class="onovo-social-2">
+                                        <ul>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="facebook.com"
+                                                    title="Facebook" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="linkedin.com"
+                                                    title="LinkedIn" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h5 class="title">
+                                        <a href="team-detail.html" class="onovo-lnk">
+                                            <span data-splitting data-onovo-scroll> Steven Morrison </span>
+                                        </a>
+                                    </h5>
+                                    <div class="onovo-subtitle-1">
+                                        <span data-splitting data-onovo-scroll> Web Designer </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--team item-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="onovo-team-two">
+                            <div class="onovo-team-two-item">
+                                <div class="image onovo-hover-3 onovo-hover-black-30" data-onovo-overlay data-onovo-scroll>
+                                    <a href="team-detail.html">
+                                        <img src="assets/images/team-4-1000x1357.jpg" alt="Alexander Bravo" />
+                                    </a>
+                                    <div class="onovo-social-2">
+                                        <ul>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="facebook.com"
+                                                    title="Facebook" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="linkedin.com"
+                                                    title="LinkedIn" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h5 class="title">
+                                        <a href="team-detail.html" class="onovo-lnk">
+                                            <span data-splitting data-onovo-scroll> Alexander Bravo </span>
+                                        </a>
+                                    </h5>
+                                    <div class="onovo-subtitle-1">
+                                        <span data-splitting data-onovo-scroll> Full-Stack Developer </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--team item-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="onovo-team-two">
+                            <div class="onovo-team-two-item">
+                                <div class="image onovo-hover-3 onovo-hover-black-30" data-onovo-overlay data-onovo-scroll>
+                                    <a href="team-detail.html">
+                                        <img src="assets/images/team-7-1-1000x1357.jpg" alt="Charlotte Johnson" />
+                                    </a>
+                                    <div class="onovo-social-2">
+                                        <ul>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="facebook.com"
+                                                    title="Facebook" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="onovo-social-link onovo-hover-2" href="linkedin.com"
+                                                    title="LinkedIn" target="_blank">
+                                                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h5 class="title">
+                                        <a href="team-detail.html" class="onovo-lnk">
+                                            <span data-splitting data-onovo-scroll> Charlotte Johnson </span>
+                                        </a>
+                                    </h5>
+                                    <div class="onovo-subtitle-1">
+                                        <span data-splitting data-onovo-scroll> Seo &amp; Copywriter </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 align-center align-self-center">
+                        <a class="onovo-btn-circle onovo-hover-2" href="team.html">
+                            <i class="arrow">
+                                <span></span>
+                            </i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Onovo Reviews -->
+        <section class="onovo-section gap-bottom-140">
+            <div class="container">
+
+                <!-- Reviews -->
+                <div class="onovo-reviews gap-140" style="background-color: #000;">
+                    <div
+                        style="background-image: url(assets/images/testi-bg.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0.24;">
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                            <!-- Reviews swiper -->
+                            <div class="onovo-reviews-carousel reviews--full onovo-text-white align-center">
+                                <div class="swiper-container js-reviews-carousel" data-loop="false" data-autoplay="6000">
+                                    <div class="swiper-wrapper">
+
+                                        <!--slide-->
+                                        <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                            <div class="text">
+                                                <div data-splitting>
+                                                    <p>“ Their high level of customer service complemented their technical
+                                                        expertise. They were responsive, supportive, and communicative.
+                                                        Their dedication to the project was impressive. ”</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="title">
+                                                <span data-splitting> Thomas Smith </span>
+                                            </h5>
+                                            <div class="subtitle">
+                                                <span data-splitting> Customer Support </span>
+                                            </div>
+                                            <div class="onovo-stars stars--small">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <!--slide-->
+                                        <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                            <div class="text">
+                                                <div data-splitting>
+                                                    <p>“ Their high level of customer service complemented their technical
+                                                        expertise. They were responsive, supportive, and communicative.
+                                                        Their dedication to the project was impressive. ”</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="title">
+                                                <span data-splitting> Mike Cameron </span>
+                                            </h5>
+                                            <div class="subtitle">
+                                                <span data-splitting> Code Quality </span>
+                                            </div>
+                                            <div class="onovo-stars stars--small">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <!--slide-->
+                                        <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                            <div class="text">
+                                                <div data-splitting>
+                                                    <p>“ Their high level of customer service complemented their technical
+                                                        expertise. They were responsive, supportive, and communicative.
+                                                        Their dedication to the project was impressive. ”</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="title">
+                                                <span data-splitting> Jessica Brown </span>
+                                            </h5>
+                                            <div class="subtitle">
+                                                <span data-splitting> Design Quality </span>
+                                            </div>
+                                            <div class="onovo-stars stars--small">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!--navs-->
+                                <div class="js-reviews-carousel-navs">
+                                    <div class="onovo-prev js-reviews-carousel-prev onovo-hover-2 nav--white">
+                                        <i></i>
+                                    </div>
+                                    <div class="onovo-next js-reviews-carousel-next onovo-hover-2 nav--white">
+                                        <i></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Onovo CTA-2 -->
+        <section class="onovo-section gap-top-140 gap-bottom-140">
+            <div class="container"
+                style="background-image: url(assets/images/bg_map.jpg); background-position: 65% 0%; background-repeat: no-repeat; background-size: contain;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 align-self-center gap-bottom-40">
+
+                        <!-- Heading -->
+                        <div class="onovo-heading gap-bottom-40">
+                            <div class="onovo-subtitle-1">
+                                <span> Have ideas for your business? </span>
+                            </div>
+                            <h2 class="onovo-title-2">
+                                <span> Let's make your <br>brand brilliant </span>
+                            </h2>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="onovo-cta-2-text">
+                            <p>Then let us know about it and we can see what we can do to help. Fill in this very quick
+                                enquiry.</p>
+                            <p><a href="tel:+02078523587">+ (020) 7852 3587</a></p>
+                        </div>
+
+                        <!-- Social-->
+                        <div class="onovo-social-1">
+                            <ul>
+                                <li>
+                                    <a class="onovo-social-link onovo-hover-2" href="http://twitter.com" title="Twitter"
+                                        target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="onovo-social-link onovo-hover-2" href="http://linkedin.com"
+                                        title="LinkedIn" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="onovo-social-link onovo-hover-2" href="http://dribbble.com"
+                                        title="Dribbble" target="_blank">
+                                        <i class="fab fa-behance"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 offset-lg-1">
+
+                        <!-- Onovo Form -->
+                        <div class="onovo-form-box onovo-text-white">
+                            <h5>Send Us A Message</h5>
+                            <p>Feel some love, to see what we can do...t!</p>
+                            <form id="cform" class="cform" method="post">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                            <input size="40" placeholder="Full Name" type="text"
+                                                name="name" />
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                            <input size="40" placeholder="Email Address" type="email"
+                                                name="email" />
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                            <input size="40" placeholder="Phone" type="tel" name="tel" />
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                            <textarea cols="40" rows="10" placeholder="Message" name="message"></textarea>
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                            <button type="submit" class="onovo-btn onovo-hover-btn btn--active">
+                                                <span>Send Message</span>
+                                            </button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Onovo Brands -->
+        <section class="onovo-section">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="onovo-heading gap-bottom-40">
+                    <div class="onovo-subtitle-1">
+                        <span> Fantastic and Premium Clients </span>
+                    </div>
+                    <h2 class="onovo-title-2">
+                        <span> We Have Had the Pleasure of <br>Working with Some Clients </span>
+                    </h2>
+                </div>
+
+                <!-- Brands items -->
+                <div class="row gap-row">
+
+                    <!--brand item-->
+                    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
+                            <a target="_blank" href="http://google.com">
+                                <span class="image">
+                                    <img decoding="async" src="assets/images/brand1.png" width="285" height="200"
+                                        alt="Visit Website" />
+                                </span>
+                                <span class="label onovo-white-black"> Visit Website </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--brand item-->
+                    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
+                            <a target="_blank" href="http://google.com">
+                                <span class="image">
+                                    <img decoding="async" src="assets/images/brand2.png" width="285" height="200"
+                                        alt="Visit Website" />
+                                </span>
+                                <span class="label onovo-white-black"> Visit Website </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--brand item-->
+                    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
+                            <a target="_blank" href="http://google.com">
+                                <span class="image">
+                                    <img decoding="async" src="assets/images/brand3.png" width="285" height="200"
+                                        alt="Visit Website" />
+                                </span>
+                                <span class="label onovo-white-black"> Visit Website </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--brand item-->
+                    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
+                            <a target="_blank" href="http://google.com">
+                                <span class="image">
+                                    <img decoding="async" src="assets/images/brand4.png" width="285" height="200"
+                                        alt="Visit Website" />
+                                </span>
+                                <span class="label onovo-white-black"> Visit Website </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--brand item-->
+                    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
+                            <a target="_blank" href="http://google.com">
+                                <span class="image">
+                                    <img decoding="async" src="assets/images/brand5.png" width="285" height="200"
+                                        alt="Visit Website" />
+                                </span>
+                                <span class="label onovo-white-black"> Visit Website </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--brand item-->
+                    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
+                            <a target="_blank" href="http://google.com">
+                                <span class="image">
+                                    <img decoding="async" src="assets/images/brand6.png" width="285" height="200"
+                                        alt="Visit Website" />
+                                </span>
+                                <span class="label onovo-white-black"> Visit Website </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--brand item-->
+                    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
+                            <a target="_blank" href="http://google.com">
+                                <span class="image">
+                                    <img decoding="async" src="assets/images/brand7.png" width="285" height="200"
+                                        alt="Visit Website" />
+                                </span>
+                                <span class="label onovo-white-black"> Visit Website </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--brand item-->
+                    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
+                            <a target="_blank" href="http://google.com">
+                                <span class="image">
+                                    <img decoding="async" src="assets/images/brand2.png" width="285" height="200"
+                                        alt="Visit Website" />
+                                </span>
+                                <span class="label onovo-white-black"> Visit Website </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </div>
 @endsection

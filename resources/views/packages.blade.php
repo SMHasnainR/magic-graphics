@@ -49,8 +49,13 @@
 											{{-- <div class="subname">
 												<span> 3 Months </span>
 											</div> --}}
-											<div class="price">
-												<span> ${{ $package['price'] }} </span>
+											<div class="price row">
+												<span class="col-1">
+													$
+												</span>
+												<span class="col-10 text-center">  
+													{{ $package['price'] }} 
+												</span>
 											</div>
 										</div>
 										<div class="desc">
@@ -69,9 +74,15 @@
 													</ul>
 												</div>
 											</div>
-											<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="{{ route('plan-request',['plan' => $package['id']]) }}">
-												<span> Purchase Now </span>
-											</a>
+											@if ($package['id'] == 6)
+												<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="{{ route('contact') }}">
+													<span> Contact Us </span>
+												</a>
+											@else
+												<a class="onovo-btn onovo-hover-btn btn--border btn--full btn--color" href="{{ route('plan-request',['plan' => $package['id']]) }}">
+													<span> Purchase Now </span>
+												</a>
+											@endif
 										</div>
 									</div>
 								</div>
