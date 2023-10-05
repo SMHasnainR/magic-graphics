@@ -53,7 +53,7 @@ class PackageController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'phone_no' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:9',
-            'message' => 'required'
+            // 'message' => 'required'
         ]);
         
         if($request->package_id == 1){

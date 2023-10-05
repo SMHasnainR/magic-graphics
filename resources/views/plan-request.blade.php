@@ -48,7 +48,18 @@
 									<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 								</div>
 							@endif
-														<!-- Form -->
+
+							@if ($errors->any())
+							<div class="alert alert-danger">
+								<ul class=" my-0">
+									@foreach ($errors->all() as $error)
+										<li>{{ $error }}</li>
+									@endforeach
+								</ul>
+							</div>
+							@endif
+
+							<!-- Form -->
 							<div class="onovo-form">
 								<form id="" class="cform" action="{{ route('plan-request') }}" method="post">
 									@csrf
@@ -56,17 +67,17 @@
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 											<p>
-												<input placeholder="Full Name" type="text" name="name" />
+												<input placeholder="Full Name" type="text" name="name" required />
 											</p>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 											<p>
-												<input placeholder="Email Address" type="email" name="email" />
+												<input placeholder="Email Address" type="email" name="email" required />
 											</p>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 											<p>
-												<input placeholder="Phone Number" type="tel" name="phone_no" />
+												<input placeholder="Phone Number" type="tel" name="phone_no" required />
 											</p>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

@@ -16,23 +16,22 @@
                     <!--slide-->
                     <div class="swiper-slide" data-swiper-autoplay>
                         <div class="onovo-hero-slide-item">
-                            <div class="image" data-dimg="assets/images/hero-digital-1.jpg"
-                                data-mimg="assets/images/hero-digital-1.jpg">
+                            <div class="image" data-dimg="https://webnetpk.com/filemanager/photos/1/60af69a8c451e.png"
+                                data-mimg="https://webnetpk.com/filemanager/photos/1/60af69a8c451e.png">
                                 <div class="ovrl" style="opacity: 0.95;"></div>
                             </div>
                             <div class="container">
                                 <div class="titles">
                                     <h1 class="title onovo-text-white">
-                                        <span data-splitting> Solid Design and <br />Development Expertise </span>
+                                        <span data-splitting> Ultimate Graphics <br />At a Fixed Price </span>
                                     </h1>
                                     <div class="text">
                                         <div class="subtitle onovo-text-white subtitle--left">
-                                            <div data-splitting> We build readymade websites, mobile apps <br>and elaborate
-                                                online business services. </div>
+                                            <div data-splitting> We're your dedicated team of creative designers, committed to delivering endless graphic solutions within your budget." </div>
                                         </div>
                                         <div class="onovo-bts">
                                             <a class="onovo-btn btn--border btn--white btn--color onovo-hover-btn"
-                                                href="about-us.html">
+                                                href="{{ route('about') }}">
                                                 <i class="arrow">
                                                     <span></span>
                                                 </i>
