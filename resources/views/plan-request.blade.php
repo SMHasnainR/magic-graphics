@@ -139,7 +139,7 @@
 
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 											<p class="d-flex justify-content-end">
-												<button type="submit" class="onovo-btn onovo-hover-btn">
+												<button id="submit-btn" type="submit" class="onovo-btn onovo-hover-btn">
 													<span>Send Message</span>
 												</button>
 											</p>
@@ -193,11 +193,14 @@
 		// console.log('sdfdsdsfsdf')
 		// alert('jdsfsd');		
 		$(document).ready(function(){
-			$('#cform').on('submit', function(e){
-				console.log('cform'); 
-				e.preventDefault();
+			// console.log('cform'); 
+
+			// $('#cform').on('submit', function(e){
+			// 	// console.log('cform'); 
+			// 	$('#submit-btn').prop('disabled', true);
 				
-			});
+			// });
+
 		});
 	</script>
 @endsection
