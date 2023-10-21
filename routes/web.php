@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
-// Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/projects', [HomeController::class, 'projects'])->name('projects');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 // Packages / Pricing Plans

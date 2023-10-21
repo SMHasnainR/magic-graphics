@@ -21,7 +21,12 @@ class HomeController extends Controller
         return view('contact-us');
     }
 
-    public function about(Request $request)
+    public function projects()
+    {
+        return view('projects');
+    }
+
+    public function about()
     {
         return view('about-us');
     }

@@ -87,10 +87,10 @@
 										</ul>
 									</li>
 									<li class="dropdown-link">
-										<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="projects.html">Projects</a>
+										<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="{{ route('projects') }}">Projects</a>
 									</li>
 									<li>
-										<a class="onovo-lnk lnk--active" href="contact-us.html">Contact Us</a>
+										<a class="onovo-lnk lnk--active" href="{{ route('contact') }}">Contact Us</a>
 									</li>
 								</ul>
 							</div>
@@ -108,7 +108,7 @@
 													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="{{ route('home') }}">Home</a>
 												</li>
 												<li class="dropdown-link menu-item-has-children">
-													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="about-us.html">About</a>
+													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="{{ route('about') }}">About</a>
 													<i class="icon fas fa-chevron-down"></i>
 													<ul class="sub-menu">
 														<li>
@@ -123,10 +123,10 @@
 													</ul>
 												</li>
 												<li class="dropdown-link ">
-													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="projects.html">Projects</a>
+													<a class="onovo-lnk lnk--active onovo-dropdown-toggle" href="{{ route('projects') }}">Projects</a>
 												</li>
 												<li>
-													<a class="onovo-lnk lnk--active" href="contact-us.html">Contact Us</a>
+													<a class="onovo-lnk lnk--active" href="{{ route('contact') }}">Contact Us</a>
 												</li>
 											</ul>
 										</div>
