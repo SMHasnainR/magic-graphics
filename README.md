@@ -24,8 +24,7 @@ For any questions, concerns, or assistance, feel free to reach out to our suppor
 [www.magicgraphics.bazazi.co](http://magicgraphics.bazazi.co/)
 
 ## Project Sample
-![image](https://github.com/SMHasnainR/magic-graphics/assets/42713592/baf01401-49eb-4c1d-9c73-fa2e3169b163)
 
+![image](https://github.com/SMHasnainR/magic-graphics/assets/42713592/d22a19cb-d972-460c-b99b-9eb0b51dda22)
 
-![image](https://github.com/SMHasnainR/magic-graphics/assets/42713592/26c01b9f-d4a3-43ab-8766-bd2b511b8a08)
-
+![image](https://github.com/SMHasnainR/magic-graphics/assets/42713592/37f0d767-d6a4-44b9-a410-5d3d57c8b035)
