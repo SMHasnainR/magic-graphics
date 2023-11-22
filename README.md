@@ -24,5 +24,8 @@ For any questions, concerns, or assistance, feel free to reach out to our suppor
 At this time, we do not accept external contributions directly to the website. However, we appreciate feedback and suggestions for improvement sent to hasnainshoaib45@gmail.com.
 
 ## Project Sample
-![Uploading image.png…]()
+![image](https://github.com/SMHasnainR/magic-graphics/assets/42713592/baf01401-49eb-4c1d-9c73-fa2e3169b163)
+
+
+![image](https://github.com/SMHasnainR/magic-graphics/assets/42713592/26c01b9f-d4a3-43ab-8766-bd2b511b8a08)
 
